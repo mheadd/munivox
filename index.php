@@ -36,7 +36,7 @@ function transfer_start() {
 		
 	$tropo = new Tropo();
 	
-	if($settings["global"]["play_system_meessage"]) {
+	if($settings["global"]["play_system_message"]) {
 		$tropo->say($settings["audio"]["system_messsage"]);
 		$tropo->on(array("event" => "continue", "next" => "index.php?uri=end"));
 	}
