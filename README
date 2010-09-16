@@ -4,13 +4,12 @@ Govfresh Voice makes it easy for small local governments to implement a sophisti
 
 * Set up unlimited numbered extensions that can forward to any cell phone or landline.
 * Accept inbound calls from landline phones, cell phones, Skype or SIP-based phones.
-* Enable speech recognition, to allow callers to select an extension or service using their voice instead of touch tone keys. 
+* Enable speech recognition, to allow callers to select an extension or service using their voice instead of touch tone. 
 * Enable voice mail recording with message recordings routed to specified users.
 * Enable transcription of voice mail recordings with transcription results e-mailed to specified users.
 * Enable "screen pops" with call transfers, to allow government employees to see information on inbound calls.
 
-Govfresh Voice also allows local governments to set up voice announcements, so that citizens can call a single numbe and select an extension
-to hear information on things like:
+Govfresh Voice also allows local governments to set up voice announcements, so that citizens can call a single number and select an extension to hear information on things like:
 
 * Public park hours.
 * Municipal building hours.
@@ -21,7 +20,7 @@ Govfresh Voice brings the power of voice and cloud telephony to local government
 
 Govfresh Voice is written in PHP and makes use of the following tools / components:
 
-* The Tropo WebAPI platform (http://www.tropo.com).
+* The Tropo platform (http://www.tropo.com).
 * The PHP WebAPI library for building Tropo applications (http://github.com/tropo/tropo-webapi-php).
 * The Limonade Framework for PHP applications (http://www.limonade-php.net/).
 
