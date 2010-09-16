@@ -3,12 +3,11 @@
 /**
  * Govfresh Voice
  * @copyright 2010 Mark J. Headd (http://www.voiceingov.org)
- * @package TropoPHP
  * @author Mark Headd
  * 
  */
 
-// Get the submitted caller id.
+// Get the submitted caller id
 $caller_id = $_REQUEST['caller_id'];
 $extension = $_REQUEST['extension'];
 

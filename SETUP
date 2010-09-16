@@ -1,5 +1,5 @@
 Modify Settings
-===============
+================
 
 	The behavior of Govfresh Voice is completely adjustable based on settings on the configuration file (config/settings.ini).
 	
@@ -36,7 +36,7 @@ Modify Settings
 		GSM 6.10 (raw) (*.gsm)
 
 Upload Files to Server
-======================
+=======================
 
 	When configuration settings are complete, upload all files to a server that supports PHP (v. 5.3.2 recommended).
 	
@@ -48,12 +48,12 @@ Upload Files to Server
 
 
 Set up Tropo Account
-====================
+=====================
 
 	Go Tropo.com and set up a new account (if you don’t have one already).  Go to the Applications section in your Tropo account and set up a new WebAPI application that points to the location of this scrip (http://www.somehost.com/govfresh-voice/index.php?uri=start).
 
 Provision Phone Number
-======================
+=======================
 
 	When you create your application, Tropo will automatically provision a Skype number, a SIP number and an iNum. You can additionally add a PSTN number in a range of different area codes.
 

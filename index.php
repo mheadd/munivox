@@ -3,7 +3,6 @@
 /**
  * Govfresh Voice
  * @copyright 2010 Mark J. Headd (http://www.voiceingov.org)
- * @package TropoPHP
  * @author Mark Headd
  * 
  */
