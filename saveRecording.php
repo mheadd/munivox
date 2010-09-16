@@ -10,9 +10,10 @@
 
 // Get the submitted caller id.
 $caller_id = $_REQUEST['caller_id'];
+$extension = $_REQUEST['extension'];
 
 // Give the recording a unique name.
-$target_path = 'voicemail/' . "rec-$caller_id-".uniqid().".wav";
+$target_path = "voicemail/$extension/rec-$caller_id-".uniqid().".wav";
 
 // Save the file.
 move_uploaded_file($_FILES['filename']['tmp_name'], $target_path);

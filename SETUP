@@ -1,0 +1,59 @@
+Modify Settings
+===============
+
+	The behavior of Govfresh Voice is completely adjustable based on settings on the configuration file (config/settings.ini).
+	
+	When setting up extensions, there are three primary options:
+	
+		1. Setting up direct user extensions (listed in the [extensions] section of the config file).  Use this type of extension to set up direct phone transfers to an individual.  Optional voicemail, transcription and "screen pop" functionality can be enabled for this type of extension by adding additional configuration values.
+		
+		2. Setting up departmental or agency extensions (listed in the [departments] section of the config file).  Use this type of extension to direct phone transfers to a general phone number.  optional voicemail, transcription functionality can be enabled for this type of extension by adding additional configuration values.  This can be useful to direct callers to leave a voicemail message to report an issue to a specific department - e.g., a voicemail message reporting a pothole can be recorded and forwarded to the public works department.  Note, screen pops are not enabled for department extensions.
+		
+		3. Setting up service extensions (listed in the [services] section of the config file).  Use this type of extension to provide information to callers on municipal services or announcements - e.g., park hours, trash pick up days, event information or construction announcements.  This type of extension does not transfer to an end user, but simply plays a message to the caller.  Voicemail, transcription and screen pops are not enabled for department extensions.
+	
+	Configuring transfer options:
+	
+		The setting always_attempt_transfer (in the [global] section) controls whether a caller has the option of leaving a voicemail for a direct user extension or department extension.  If providing this option is desired, set this value to true, otherwise set to false.
+		
+		The setting do_screen_pop (in the [screenpop] section) controls whether a screen pop is attempted on a transfer to a direct user extension.  If this value is set to true, modify the screen_pop_network and screen_pop_message_text settings as appropriate.  In addition, in order for screen pops to work, an IM username/address must be included in the extension setting (in the [extensions] section).
+	
+	Configuring prompts and messages:
+	
+		All of the prompts and messages used by Govfresh Voice can be modified (see settings in the [audio] section).  If recorded audio is desired in place of Text-to-Speech (TTS), replace the value for a specific message with the full URL to an audio file that can be retrieved via HTTP: 
+		
+		(Uses TTS)
+		system_message = "This system is currently unavailable."
+		
+		(Uses recorded audio)
+		system_message = "http://www.somehost.com/govfresh-voice/audio/system-message.wav"
+		
+		Supported audio formats:
+		8kHz, 8bit u-law (wav or raw) (*.wav or *.ulaw)
+		8kHz, 8bit a-law (wav or raw) (*.wav or *.alaw)
+		8kHz, 8bit pcm (wav) (*.wav)
+		8khz, 16bit pcm (wav or raw) (*.wav or *.pcm)
+		MS-GSM (wav) (*.wav)
+		GSM 6.10 (raw) (*.gsm)
+
+Upload Files to Server
+======================
+
+	When configuration settings are complete, upload all files to a server that supports PHP (v. 5.3.2 recommended).
+	
+	Create a new directory called "classes" and upload both the Tropo PHP WebAPI class file (http://github.com/tropo/tropo-webapi-php) and the Limonade PHP framework (http://www.limonade-php.net/) to this directory
+	
+	classes
+	   |-- tropo.class.php
+	   |-- limonade/lib/limonade.php
+
+
+Set up Tropo Account
+====================
+
+	Go Tropo.com and set up a new account (if you don’t have one already).  Go to the Applications section in your Tropo account and set up a new WebAPI application that points to the location of this scrip (http://www.somehost.com/govfresh-voice/index.php?uri=start).
+
+Provision Phone Number
+======================
+
+	When you create your application, Tropo will automatically provision a Skype number, a SIP number and an iNum. You can additionally add a PSTN number in a range of different area codes.
+
