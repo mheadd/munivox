@@ -1,11 +1,5 @@
 Govfresh Voice is a cloud telephony application specifically engineered for local governments.
 
-Govfresh Voice is written in PHP and makes use of the following tools / components:
-
-* The Tropo WebAPI platform (http://www.tropo.com).
-* The PHP WebAPI library for building Tropo applications (http://github.com/tropo/tropo-webapi-php).
-* The Limonade Framework for PHP applications (http://www.limonade-php.net/).
-
 Govfresh Voice makes it easy for small local governments to implement a sophisticated cloud-based PBX system with the following features:
 
 * Set up unlimited numbered extensions that can forward to any cell phone or landline.
@@ -24,6 +18,12 @@ to hear information on things like:
 * Garbage or trash pick up schedules.
 
 Govfresh Voice brings the power of voice and cloud telephony to local governments.
+
+Govfresh Voice is written in PHP and makes use of the following tools / components:
+
+* The Tropo WebAPI platform (http://www.tropo.com).
+* The PHP WebAPI library for building Tropo applications (http://github.com/tropo/tropo-webapi-php).
+* The Limonade Framework for PHP applications (http://www.limonade-php.net/).
 
 Copyright (c) 2010 Mark Headd
 http://www.voiceingov.org
