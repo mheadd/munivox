@@ -1,6 +1,6 @@
-Govfresh Voice is a cloud telephony application specifically engineered for local governments.
+Munivox is a cloud telephony application specifically engineered for local governments.
 
-Govfresh Voice makes it easy for small local governments to implement a sophisticated cloud-based PBX system with the following features:
+Munivox makes it easy for small local governments to implement a sophisticated cloud-based PBX system with the following features:
 
 * Set up unlimited numbered extensions that can forward to any cell phone or landline.
 * Accept inbound calls from landline phones, cell phones, Skype or SIP-based phones.
@@ -9,16 +9,16 @@ Govfresh Voice makes it easy for small local governments to implement a sophisti
 * Enable transcription of voice mail recordings with transcription results e-mailed to specified users.
 * Enable "screen pops" with call transfers, to allow government employees to see information on inbound calls.
 
-Govfresh Voice also allows local governments to set up voice announcements, so that citizens can call a single number and select an extension to hear information on things like:
+Munivox also allows local governments to set up voice announcements, so that citizens can call a single number and select an extension to hear information on things like:
 
 * Public park hours.
 * Municipal building hours.
 * Special event or parade information.
 * Garbage or trash pick up schedules.
 
-Govfresh Voice brings the power of voice and cloud telephony to local governments.
+Munivox brings the power of voice and cloud telephony to local governments.
 
-Govfresh Voice is written in PHP and makes use of the following tools / components:
+Munivox is written in PHP and makes use of the following tools / components:
 
 * The Tropo platform (http://www.tropo.com).
 * The PHP WebAPI library for building Tropo applications (http://github.com/tropo/tropo-webapi-php).
